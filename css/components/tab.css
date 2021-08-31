@@ -1,0 +1,231 @@
+.tabs{ 
+    position: relative;
+    padding: 0; 
+    list-style: none;
+}
+
+.tab{ 
+    float: left; 
+    padding: 10px 0; 
+}
+
+.tab label{ 
+    position: relative; 
+    /* content에 대해 */
+    background: #eee; 
+    padding: 8px 20px; 
+    border: 1px solid #ccc;
+}
+
+.tab [type="radio"]{ 
+    display: none;
+}
+
+.tab .content {
+    display: none;
+    position: absolute; 
+    top: 39px; 
+    left: 0px; 
+    right: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+.tab [type="radio"]:checked ~ label{ 
+    /* : 가상 클래스 선택자  - class가 tab, type=radio
+    선택했거나 on상태인 라디오, 체크박스, 옵션 요소
+    /* checked옆에 있는(자매인) label태그 (개수 상관 없이 모두) 선택  */
+    /* 즉 체크된 탭 css */
+    background: white;
+    border-bottom: 1px solid white; 
+    z-index: 2;
+}
+
+.tab [type="radio"]:checked+label+.content{ 
+    /* +는 자매 중 바로 옆에 있는 거 한개  (checked된, label이ㅡ 옆 conten   */
+    /* 앞의 요소 바로 뒤에 있는 요소만 선택 */
+    display: block;
+} 
+
+.item-wrapper{ 
+    position: relative;
+}
+
+
+.infobox{
+    position: absolute;
+    width: 40px; 
+    height:30px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 20%;
+    padding: 5px 0px;
+    font-size: 10px;
+}
+
+.infobox-number{ 
+    text-align: center;
+    font-weight: bold; 
+    margin-bottom: 1px;
+}
+
+.infobox-title{ 
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.jongno{ 
+    top: 130px; 
+    left: 220px;
+}
+
+.jung{ 
+    top: 180px; 
+    left: 250px;
+}
+
+.seongdong{ 
+    top: 190px; 
+    left: 300px; 
+}
+
+.gwangjin{ 
+    top: 190px; 
+    left: 370px;
+}
+
+.dongdaemun{ 
+    font-size: 10px;
+    top: 150px;
+    left: 330px;
+}
+
+.seongbuk{ 
+    top: 120px;
+    left: 280px;
+}
+
+.gangbuk{ 
+    top:70px; 
+    left:270px;
+}
+
+.dobong{ 
+    top:30px;
+    left:300px; 
+}
+
+.nowon{ 
+    top:50px;
+    left:350px; 
+}
+
+.eunpyeong{ 
+    top:100px;
+    left:170px;
+}
+
+.seodaemun{ 
+    top: 150px; 
+    left: 180px;
+}
+
+.mapo{ 
+    top: 180px; 
+    left: 150px;
+}
+
+.yangcheon{ 
+    top:230px;  
+    left:80px; 
+}
+
+.gangseo{ 
+    top:180px; 
+    left:40px;
+}
+
+.guro{ 
+    top: 280px; 
+    left: 80px;
+}
+
+.geumcheon{ 
+    top: 320px; 
+    left: 140px;
+}
+
+.yeongdeungpo{ 
+    top:240px; 
+    left:150px;
+}
+
+.dongjak{
+    top: 260px; 
+    left: 200px;
+}
+
+.gwanak{ 
+    top:320px;
+    left:200px;
+}
+
+.seocho{ 
+    top: 290px;
+    left: 270px;
+}
+
+.gangnam{ 
+    top: 280px; 
+    left: 330px; 
+}
+
+.songpa{ 
+    top: 260px;
+    left: 400px;
+}
+
+.gangdong{ 
+    top: 130px;
+    left: 380px;
+}
+
+.yongsan{ 
+    top: 220px;
+    left: 230px;
+}
+
+.jungnang{ 
+    top: 200px;
+    left: 430px;
+}
+
+#seoul-img{ 
+    width: 500px; 
+    object-fit: cover;
+}
+
+.infobox-up{ 
+  background-color: #feecf0;
+  padding: 1px 3px;
+  text-align: center;
+  border-radius:10px;
+  color: #ee6582;
+  margin-bottom:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
